@@ -25,7 +25,7 @@ sizeDropdown = Tkinter.OptionMenu(root, sizeUnit, "MB", "GB")
 
 sizeLabel.grid(column=0, row = 0)
 sizeEntry.grid(column=1, row = 0)
-sizeDropDown.grid(column = 2, row = 0)
+sizeDropdown.grid(column = 2, row = 0)
 
 root.mainloop()
 
