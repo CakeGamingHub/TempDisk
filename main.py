@@ -18,7 +18,7 @@ root.after(1, checkOS)
 statusLabel = Tkinter.Label(root, text="Status Label")
 
 sizeLabel = Tkinter.Label(root, text="Size")
-sizeEntry = Tkinter.Label(root)
+sizeEntry = Tkinter.Entry(root)
 sizeUnit = Tkinter.StringVar(root)
 sizeUnit.set("MB")
 sizeDropdown = Tkinter.OptionMenu(root, sizeUnit, "MB", "GB")
