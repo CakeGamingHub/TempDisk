@@ -11,6 +11,18 @@ def checkOS():
 	else:
 		statusLabel.config(text="Supported")
 
+def createDisk():
+	cmd = "mount -t tmpfs -o size="
+	cmd += sizeEntry.get()
+	cmd += sizeUnit.get()
+	cmd += " tmpfs /mnt/ramDisk"
+	
+	os.system("mkdir /mnt/ramDisk")
+	os.system(cmd)
+
+	sizeEntry.delete(0,END)
+	sizeEntry.insert(0, "RamDiskCreated")
+
 root = Tkinter.Tk()
 
 root.after(1, checkOS)
