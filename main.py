@@ -4,7 +4,7 @@ import sys
 
 import Tkinter
 
-def checkOS:
+def checkOS():
 	if platform.system().upper() != "LINUX":
 		statusLabel.config(text="Unsupported")
 
